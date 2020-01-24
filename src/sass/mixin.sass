@@ -1,0 +1,14 @@
+
+    
+@mixin media($media) 
+    @if $media == handhelds
+        @media only screen and (max-width: $small) 
+            @content
+    
+    @if $media == medium
+        @media only screen and (min-width: $small + 1) and (max-width: $large - 1) 
+            @content
+  
+    @if $media == wide
+        @media only screen and (min-width: $large) 
+            @content

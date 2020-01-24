@@ -1,0 +1,74 @@
+body
+    margin: 0
+
+    &.body
+        overflow: hidden
+
+
+body:nth-child(4) 
+    display: flex
+    align-items: center
+
+body::-webkit-scrollbar
+    width: 10px
+
+body::-webkit-scrollbar-thumb
+    background: linear-gradient(to top, #a5c7fa, #8bb7f8)
+    border-radius: 10px
+    transition: all .3s linear
+
+body::-webkit-scrollbar-thumb:hover
+    background: #56999f
+
+body::-webkit-scrollbar-track
+    background: lighten(#a5c7fa, 10%)
+
+body::-webkit-scrollbar-button 
+    background: darken(#a5c7fa, 5%)
+    
+  
+*
+    box-sizing: border-box
+  
+    &:before, &:aftrer
+        box-sizing: border-box
+  
+/* Tegs */
+  
+h1, h2, h3, h4, h5, h6
+    margin: 0
+  
+  
+p
+    margin: 0 0 0 0
+  
+a
+    text-decoration: none
+    color: inherit
+  
+  
+/*Container*/
+
+.container
+    width: 100%
+    max-width: 1300px
+    margin: 0 auto
+    
+
+/*Media*/
+
+@media ( max-width: 1200px)
+    .container
+        max-width: 1140px
+
+@media ( max-width: 992px)
+    .container
+        max-width: 960px
+
+@media ( max-width: 768px)
+    .container
+        max-width: 720px
+
+@media ( max-width: 576px)
+    .container
+        max-width: 540px

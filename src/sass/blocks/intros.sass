@@ -1,0 +1,258 @@
+.intro
+    position: relative
+    z-index: 1
+    top: 100px
+    height: 900px
+    &-inner
+        display: flex
+        
+
+        object:nth-child(2)
+            position: absolute
+            right: 0
+            top: 0
+            z-index: 2
+        
+
+    &-item
+        width: 43%
+        margin-top: 170px
+
+        object
+            position: absolute
+            z-index: 4
+            bottom: 0
+            left: -40px
+
+    &-title
+        font-family: $ff-ns
+        font-weight: $fw-900
+        font-size: $px-75
+        color: $title
+        line-height: $px-80
+        margin-bottom: $px-75
+        
+
+    &-subtitle
+        font-family: $ff-ns
+        font-weight: $fw-400
+        font-size: $px-22
+        color: $subtitle
+        line-height: $px-30
+        width: 83%
+        margin-bottom: $px-100
+
+    &-button
+        a
+            position: relative
+            font-family: $ff-ns
+            font-weight: $fw-600
+            font-size: $px-20
+            background: linear-gradient( to right, darken(#aacafa, 8%), #5897f5)
+            padding: $px-25 $px-45
+            color: $white
+            transition: all .4s linear
+            position: sticky
+            z-index: 5
+
+            &:hover
+                // background: linear-gradient(to right, #5897f5, #4497f3)
+                box-shadow: 0px -5px 10px 15px rgba(19, 147, 219, .1) 
+                .help-gr
+                    opacity: 1 
+
+        .help-gr  
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to right, #5897f5, #4497f3)
+            opacity: 0
+            transition: all .5s linear
+            display: flex
+            justify-content: center
+            align-items: center
+
+
+//Media
+@media ( max-width: 1500px )
+    .intro-one
+        width: 240px
+        height: 320px
+        
+    .intro-item
+        object
+            left: -110px
+            bottom: 25px
+
+
+@media ( max-width: 1300px )
+    .intro-inner
+        margin: 0 $px-30
+
+        object:nth-child(2)
+            height: 700px
+            width: 700px
+
+
+    .intro-title
+        font-size: $px-70
+        margin-bottom: $px-65
+        line-height: $px-70
+
+    .intro-item
+        object
+            left: -110px
+            bottom: 60px
+
+@media ( max-width: 1200px )
+
+    .intro-inner
+
+        object:nth-child(2)
+            height: 650px
+            width: 650px
+    
+
+@media ( max-width: 1137px )
+    .intro-title
+        font-size: $px-60
+
+    .intro-subtitle
+        width: 100%
+        margin-bottom: $px-80
+
+    .intro-item
+        object
+            left: -100px
+            bottom: 70px
+
+    .intro-inner
+
+        object:nth-child(2)
+            height: 650px
+            width: 600px
+
+@media ( max-width: 1040px )
+    .intro-inner
+
+        object:nth-child(2)
+            height: 650px
+            width: 600px
+
+
+@media ( max-width: 997px)
+    .intro-title
+        font-size: $px-50
+        margin-bottom: $px-30
+
+    .intro-item
+        margin-top: $px-60
+
+    .intro-item
+        object
+            left: -110px
+            bottom: 220px
+
+    .intro-inner
+
+        object:nth-child(2)
+            height: 620px
+            width: 550px
+
+@media ( max-width: 895px )
+    .intro-item
+        object
+            left: -80px
+            bottom: 190px
+
+
+@media ( max-width: 833px )
+
+    .intro
+        height: 575px
+
+    .intro-title
+        font-size: $px-45
+        line-height: $px-60
+
+    .intro-subtitle
+        // font-size: $px-18
+
+    .intro-inner
+        display: flex
+        justify-content: center
+
+    .intro-item
+        text-align: center
+        margin-top: $px-40
+        width: 100%
+
+    .intro-two
+        display: none
+
+    
+
+@media ( max-width: 767px )
+    .intro-title
+        font-size: $px-40
+
+    .intro-subtitle
+        font-size: $px-20
+
+@media ( max-width: 680px )
+    .intro-title
+        font-size: $px-35
+        line-height: $px-50
+
+    .intro-subtitle
+        font-size: $px-20
+
+    .intro-button
+        a
+            font-size: $px-16
+
+@media ( max-width: 620px )
+    .intro-item
+        object
+            left: -80px
+            bottom: 175px
+
+@media ( max-width: 470px )
+    .intro-item
+        object
+            left: -80px
+            bottom: 115px
+
+@media ( max-width: 454px )
+    .intro-item
+        object
+            left: -80px
+            bottom: 100px
+
+@media ( max-width: 415px )
+    .intro-item
+        object
+            left: -100px
+            bottom: 100px
+
+@media ( max-width: 380px )
+    .intro-item
+        object
+            left: -150px
+            bottom: 30px
+
+    .intro-one
+        width: 270px
+        height: 350px
+
+
+
+// @media ( max-width: 600px)
+
+    
+
+
+
+            

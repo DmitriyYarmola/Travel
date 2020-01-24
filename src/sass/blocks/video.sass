@@ -1,0 +1,160 @@
+.video
+    margin-top: $px-250
+    @include media(medium)
+        margin-top: $px-100
+
+    &-inner
+        display: flex
+        justify-content: center
+        margin-top: 115px
+        @include media(medium)
+            display: block
+
+    &-passive
+        margin-left: $px-15
+        height: 540px
+        overflow-y: scroll
+        padding-right: $px-20
+        min-width: 450px
+
+    
+    &-active
+        
+    
+    
+
+        
+
+    &-passive::-webkit-scrollbar-track
+
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        background-color: $white
+
+    &-passive::-webkit-scrollbar
+
+        width: 6px
+        background-color: transparent
+
+
+    &-passive::-webkit-scrollbar-thumb
+
+        background-color: $grey
+
+.passive-item
+    padding: $px-15
+
+.passive-item 
+    display: flex
+    align-items: center
+
+    &:hover
+        background: $bg-passive
+        cursor: pointer
+    img
+        width: 160px
+        height: 90px
+
+.passive-content
+    margin-left: $px-10
+
+.passive-name
+    font-family: $ff-ns
+    font-weight: $fw-600
+    font-size: $px-22
+    color: $title
+
+.passive-time
+    font-family: $ff-ns
+    font-weight: $fw-400
+    font-size: $px-15
+    margin-top: $px-10
+    color: rgba(9, 30, 64, .7)
+
+
+//Media
+
+@media ( max-width: 1360px )
+    .video-inner
+        flex-direction: column
+
+    .video-active
+        display: flex
+        justify-content: center
+        margin-bottom: $px-50
+        video
+            padding: 0 15px
+            width: 100%
+            height: 100%
+
+    .video-passive
+        width: 100%
+        margin: 0 20px
+
+@media ( max-width: 1200px )
+
+
+    .video-passive
+        padding-right: 40px
+        margin: 0
+        min-width: inherit
+
+
+@media ( max-width: 977px )
+    
+
+    .video-passive
+        // max-width: 700px
+        width: 100%
+        margin: 0 20px
+
+
+@media ( max-width: 767px )
+
+    .video-inner
+        margin-top: $px-55
+    .video-active
+        video
+            width: 100%
+            height:  100%
+
+    .video-passive
+        // max-width: 400px
+        width: 100%
+        margin: 0 20px
+
+
+@media ( max-width: 500px )
+
+    .video
+        margin-top: $px-40
+
+    
+    .video-active
+        video
+            width: 100%
+            height: 100%
+
+    .video-passive
+        // max-width: 300px
+        width: 100%
+        margin: 0 
+
+    .passive-item
+        width: 300px
+        margin: 0 auto
+
+    .passive-name
+        font-size: $px-18
+
+    
+
+
+@media ( max-width: 450px )
+
+    .passive-item
+        width: 300px
+        margin: 0 $px-10
+
+
+
+    

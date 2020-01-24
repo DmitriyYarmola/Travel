@@ -1,0 +1,518 @@
+.travel
+    overflow: hidden
+    position: relative
+        
+    &-inner
+        // display: flex
+        // position: relative
+        margin-top: 100px
+
+    &-item
+        // display: flex
+        // width: 965px
+        transform: translateX(-25%)
+
+    &-card-medium
+        width: 420px
+        height: 450px
+        position: relative
+        overflow: hidden
+        margin: 0 $px-20
+        transition: transform .4s linear, box-shadow .4s linear
+
+        img
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 3
+            top: 50%
+            left: 50%
+            transform: translate3d(-50%, -50%, 0)
+            
+            
+        &::after
+            position: absolute
+            content: ""
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to top, rgba(47, 60, 64, 1), transparent 50%)
+            z-index: 7
+    
+
+    &-card
+        
+        width: 300px
+        height: 425px
+        position: relative
+        margin: 0 $px-10 $px-50
+        transition: transform .4s linear
+        
+
+        span
+            position: absolute
+            top: 25px
+            left: 0
+            z-index: 9
+            display: block
+
+            font-family: $ff-ns
+            font-weight: $fw-600
+            font-size: $px-20
+            color: $white
+            padding: $px-10 $px-30
+            background: $card
+        
+        img
+            display: block
+            width: 100%
+            height: 100%
+            
+            
+            
+        &::after
+            position: absolute
+            content: ""
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to top, rgba(27, 61, 68, .97), transparent 70%)
+            z-index: 7
+
+
+
+
+
+.slick
+    display: flex
+.stats
+    display: flex
+    justify-content: space-between
+    transform: translateY(-45px)
+    position: sticky
+    z-index: -1
+
+
+.card-date
+    font-family: $ff-ns
+    font-weight: $fw-600
+    font-size: $px-20
+    color: $card-date
+            
+.card-stars
+    display: flex
+    justify-content: space-between
+                
+            
+
+
+.card-title
+    position: absolute
+    bottom: 15px
+    left: 15px
+    z-index: 8
+    font-family: $ff-ns
+    font-weight: $fw-400
+    font-size: $px-16
+    color: $white
+
+
+.star
+    width: $px-20
+    height: $px-20
+    fill: $card
+    transition: all .4s linear
+    position: relative
+
+    &:hover
+        .star2
+            opacity: 1
+    
+
+.star2
+    width: $px-20
+    height: $px-20
+    fill: $card
+
+    position: absolute
+    content: ""
+    bottom: $px-7
+    left: 0
+    opacity: 0
+    width: $px-20
+    height: $px-20
+    transition: all .4s linear
+
+.star-item
+    margin-right: $px-5
+    position: relative
+    z-index: 5
+
+    &:hover
+        .star2
+            opacity: 1
+
+
+.travel-content
+    
+    position: absolute
+    right: 0
+    bottom: 21%
+    width: 39%
+
+
+.content-title
+    font-family: $ff-ns
+    font-weight: $fw-600
+    font-size: $px-45
+    color: $title
+    position: relative
+
+    &::after
+        content: ""
+        display: block
+        width: $px-70
+        height: $px-5
+        position: absolute
+        bottom: -30px
+        left: 0
+        background: $li-menu
+        
+.content-subtitle
+    font-family: $ff-ns
+    font-weight: $fw-400
+    font-size: $px-20
+    color: $subtitle
+    margin-top: $px-60
+    line-height: $px-30
+
+.content-button
+    margin-top: $px-50
+    a
+        font-family: $ff-ns
+        font-weight: $fw-600
+        font-size: $px-20
+        padding: $px-15 $px-70
+        color: $white
+        background: $li-menu
+        transition: all .4s linear
+        &:hover
+                    
+            box-shadow: 10px 5px 20px 5px rgba(19, 147, 219, .2)
+
+
+
+
+.flickity-viewport
+    overflow: visible
+    
+
+
+.carusel2
+    transform: translate(-35%)
+    .flickity-page-dots
+        display: none
+
+    .flickity-viewport
+        margin-bottom: $px-60
+
+    .flickity-prev-next-button
+        top: initial
+        bottom: -68px
+
+        &.next
+            right: 29%
+            transform: translateX(-50%)
+
+        &.previous
+            left: 60%
+            transform: translateX(-50%)
+
+    .travel-card
+        &.test
+            transform: translateY(-50px)
+            box-shadow: 0px 5px 35px -5px rgba(0,0,0,.5)
+            
+                
+
+            .stats
+                transform: translateY(25px)
+
+
+        
+
+    // .previous, .next
+    //     border: 0
+    //     background: red
+    //     margin: 0
+    //     padding: 0
+    //     height: 30px
+    //     width: 30px
+    //     outline: none
+    //     position: absolute
+    //     bottom: 0
+    //     right: 50%
+    //     transform: translateX(-50%)
+    //     z-index: 5
+    //     font-size: 0px
+
+.carusel3
+    
+    .flickity-page-dots
+        display: none
+
+    .flickity-prev-next-button
+        top: initial
+        bottom: -115px
+
+        &.next
+            right: 41%
+            transform: translateX(-50%)
+
+        &.previous
+            left: 44%
+            transform: translateX(-50%)
+
+    .travel-card-medium 
+        &.is-selected
+            transform: translateY(-30px)
+            box-shadow: 5px 10px 50px 10px rgba(0,0,0,.5)
+
+.carusel-ml
+    display: none
+
+//media
+
+@media ( max-width: 1350px )
+    .carusel2
+        transform: translate(-35%)
+        .flickity-page-dots
+            display: none
+
+        .flickity-viewport
+            margin-bottom: $px-60
+
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: 20%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 70%
+                transform: translateX(-50%)
+
+@media ( max-width: 1300px )
+    // .carusel2[data-flickity={ "freeScroll": true, "wrapAround": true }]
+
+
+    .travel-item
+        transform: translate(0)
+
+    .travel-content
+        position: static
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        width: 100%
+        flex-direction: column
+        margin-bottom: $px-100
+
+    .content-button
+        a
+            display: block
+
+    .content-title
+        &::after
+            left: 50%
+            transform: translate(-50%)
+
+    .carusel4
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: 42%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 45%
+                transform: translateX(-50%)
+
+@media ( max-width: 1300px) and (min-width: 796px )
+    .carusel2
+        transform: translate(0)
+        
+    .carusel-lg
+        display: none
+    
+    .carusel-ml
+        display: block
+
+    
+
+@media ( max-width: 795px )
+    .travel-card
+        width: 280px
+        height: 415px
+    .carusel2
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: -5%
+                transform: translateX(-50%)
+                bottom: -45px
+
+            &.previous
+                left: 84%
+                bottom: -45px
+                transform: translateX(-50%)
+
+@media ( max-width: 582px )
+    .carusel2
+        transform: translate(-57%)
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: 10%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 70%
+                transform: translateX(-50%)
+
+    .carusel3 
+        .flickity-prev-next-button
+            bottom: -100px
+
+    .travel-card-medium
+        width: 380px
+        height: 410px
+
+@media ( max-width: 510px )
+    .content-title
+        font-size: $px-40
+
+    .content-subtitle
+        font-size: $px-18
+
+    .carusel3 
+        .flickity-prev-next-button
+            &.previous
+                left: 39%
+
+            &.next
+                left: 57%
+
+@media ( max-width: 454px )
+    .content-title
+        font-size: $px-35
+
+    .content-subtitle
+        font-size: $px-18
+
+
+
+
+@media ( max-width: 432px )
+    .carusel2
+        transform: translate(-70%)
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: -45%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 109%
+                transform: translateX(-50%)
+
+@media ( max-width: 400px )
+    .content-title
+        font-size: $px-27
+
+    .content-subtitle
+        font-size: $px-18
+
+@media ( max-width: 380px )
+    .carusel2
+        transform: translate(-75%)
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: -55%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 105%
+                transform: translateX(-50%)
+
+    .travel-card 
+        width: 250px
+        height: 415px
+        // margin: 0 $px-5 $px-50
+
+    .travel-card-medium
+        width: 300px
+        height: 330px
+
+@media ( max-width: 340px )
+    .carusel2
+        transform: translate(-80%)
+        .flickity-prev-next-button
+            top: initial
+            bottom: -68px
+
+            &.next
+                right: -65%
+                transform: translateX(-50%)
+
+            &.previous
+                left: 115%
+                transform: translateX(-50%)
+
+    .travel-card 
+        width: 250px
+        height: 415px
+        // margin: 0 $px-5 $px-50
+
+
+
+    
+
+
+
+
+
+
+
+            
+
+
+
+
+        
+
+
+
+
+
+    
+        
+
+

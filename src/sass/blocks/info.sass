@@ -1,0 +1,74 @@
+.info
+    
+
+    &-inner
+        display: flex
+        justify-content: center
+        flex-direction: column
+        text-align: center
+
+    &-title
+        font-family: $ff-ns
+        font-weight: $fw-600
+        font-size: $px-50
+        color: $title
+        position: relative
+        padding-bottom: $px-40
+        
+        &::after
+            position: absolute
+            content: ""
+            display: block
+            width: $px-80
+            height: $px-5
+            background: $li-menu
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+
+    &-subtitle
+        font-family: $ff-ns
+        font-weight: $fw-400
+        font-size: $px-20
+        color: $subtitle
+        line-height: $px-40
+        margin-top: $px-30
+
+
+//SLider Options
+
+.slick-prev, .slick-next
+
+    border: 0
+    margin: 0
+    padding: 0
+    background: none
+    outline: none
+    z-index: 1
+    font-size: 0
+    
+
+
+.slick-prev
+    position: absolute
+    top: 50%
+    left: 30%
+    transform: translate(-50%,-50%)
+    background: url('../img/search/arrow/back.svg') center no-repeat
+    width: 30px
+    height: 30px
+
+.slick-next
+    position: absolute
+    top: 50%
+    right: 26%
+    transform: translate(-50%,-50%)
+    background: url('../img/search/arrow/next.svg') center no-repeat
+    width: 30px
+    height: 30px
+
+    &:hover
+        cursor: pointer
+
+    &.slick-arrow
+        // cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB2klEQ…K5AqpezJ/C9+OMl6tWTcFUJVT+j+B5hT5zDGXl05KfrYk/AAd3oRGH+lhDAAAAAElFTkSuQmCC) 0 0 , auto !important

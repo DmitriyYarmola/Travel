@@ -1,0 +1,203 @@
+.search
+    height: 900px
+    overflow: hidden
+    position: relative
+    
+    
+
+.search-bg
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    height: 100%
+    z-index: 5
+    transform: translate(-50%, -50%)
+    background: url('../img/search/bg.png') no-repeat center
+    background-size: cover
+    // -webkit-background: url(../../build/img/search/bg.png) center/cover no-repeat #204b67
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: $bg-color
+
+
+.search-content
+    text-align: center
+    
+.search-title
+    font-family: $ff-ns
+    font-weight: $fw-600
+    font-size: $px-38
+    color: $white
+
+.search-subtitle
+    font-family: $ff-ns
+    font-weight: $fw-900
+    font-size: $px-60
+    color: $white
+
+
+.search-dates
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: $px-60
+
+
+.search-all
+    width: 75% 
+    &:hover
+        cursor: pointer
+        
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        li
+            display: flex
+            font-family: $ff-ns
+            font-weight: $fw-600
+            font-size: $px-20
+            color: $white
+            padding: $px-15 0 $px-15 $px-20
+            background: rgba(255, 255, 255, .2)
+            position: relative
+
+
+            .destinations
+                padding-right: $px-110
+            
+            .package
+                padding-right: $px-147
+
+            .dates
+                padding-right: $px-163
+
+            
+
+            .arrow
+                display: flex
+                flex-direction: column
+                margin-top: $px-2
+                padding-right: $px-30
+                i
+                    height: $px-5
+                    width: $px-5
+
+            .calendar
+                padding-right: $px-30
+            ul
+                display: none
+                position: absolute
+                bottom: -173px
+                left: 0
+
+                width: 100%
+                li
+                    margin-left: $px-40 
+                    &:hover
+                        background: rgba(255, 255, 255, .5  )
+
+            &:hover
+                ul
+                    display: block
+        
+
+
+.search-btn
+    a
+        font-family: $ff-ns
+        font-weight: $fw-600
+        color: $white
+        font-size: $px-20
+        padding: $px-15 $px-100 
+        background: $li-menu
+        transition: .4s linear
+
+    &:hover
+        a
+            background: darken($li-menu, 10%)
+
+.arrows-1, .arrows-2
+    width: $px-10
+    height: $px-8
+    fill: $white
+
+.arrows-1
+    margin-bottom: $px-7
+
+//Media
+
+@media ( max-width: 1350px )
+
+    .search
+        &-dates
+            flex-direction: column
+            justify-content: center
+        &-all
+            width: 100%
+            ul
+                justify-content: space-around
+
+        &-btn
+            margin-top: $px-80
+
+
+@media ( max-width: 967px  )
+
+    .search
+
+        &-all
+            ul
+                flex-direction: column
+                justify-content: center
+                z-index: 10
+                li
+                    margin: 0 auto $px-10
+
+                    ul
+                        bottom: -200px
+                        padding-top: 40px
+
+                        li
+                            margin-left: 0
+                            background: $white
+                            color: $black
+                            padding: $px-15 $px-20
+                            
+                            &:hover
+                                background: $li-menu
+                            
+
+
+        &-btn
+            margin-top: $px-80
+        
+
+@media ( max-width: 579px ) 
+
+    .search
+        height: 700px
+
+        &-subtitle
+            font-size: $px-45
+
+        &-dates
+            margin-top: $px-55
+
+        &-btn
+            margin-top: $px-45
+            a
+                display: block
+
+
+
+
+        
+
